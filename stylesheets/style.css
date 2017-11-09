@@ -1,0 +1,108 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+a, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+}
+
+.left-pane {
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  // background-image: url('../images/whitebricks.jpg')
+}
+
+.bar {
+  height: 4px;
+  width: 185px;
+  background: linear-gradient(90deg,#c77f24 0,#abbb65);
+  margin-bottom: 40px;
+}
+
+.title-wrapper {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: 45%;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px -4px 32px -3px rgba(153,153,153,1);
+  -moz-box-shadow: 1px -4px 32px -3px rgba(153,153,153,1);
+  box-shadow: 1px -4px 32px -3px rgba(153,153,153,1);
+  background: #fff;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-out;
+}
+
+.project:hover {
+  -webkit-box-shadow: 1px -4px 32px 11px rgba(171,187,101,1);
+  -moz-box-shadow: 1px -4px 32px 11px rgba(171,187,101,1);
+  box-shadow: 1px -4px 32px 11px rgba(171,187,101,1);
+}
+
+.project-img {
+  height: 250px;
+  max-width: 100%;
+}
+
+.right-pane {
+  width: 40%;
+  background-color: #163448;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.self-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-image: url('../images/Lisa.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white {
+  color: #fff;
+}
+
+.green {
+  color: #abbb65;
+}
+
+.details {
+  padding: 20px;
+}

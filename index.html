@@ -5,10 +5,39 @@
       <meta charset="UTF-8">
       <meta name='description' content='Lisa Carlson'>
       <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0'>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
       <link rel='stylesheet', href='stylesheets/style.css'>
     </head>
     <body ng-controller="MainController">
-    <h1> {{ welcome }} </h1>
+      <div class="content">
+        <div class="left-pane">
+          <div class="title-wrapper">
+            <h2> My Work </h2>
+            <div class="bar"></div>
+          </div>
+          <div class="projects">
+            <div class="project" ng-repeat="project in projects">
+              <a target="_blank" href="{{ project.url }}">
+                <img class="project-img" ng-src="{{ project.img }}" >
+                <div class="details">
+                  <div> {{project.title}} </div>
+                </div> 
+              </a> 
+            </div>  
+          </div>
+        </div>
+        <div class="right-pane">
+          <h1 class="white">Lisa Carlson</h1>
+          <div class="self-img"></div>
+          <h4 class="white">I turn words into software.</h4>
+          <ul class="links">
+            <li>
+              <a class="green" href="/home"> Home </a>
+            </li>
+            <li class="green" href="/about"> About </li>
+          </ul>
+        </div>
+      </div>    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
       <script src="javascripts/app.js"></script>
