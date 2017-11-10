@@ -1,0 +1,16 @@
+<div class="title-wrapper">
+  <h2> My Work </h2>
+  <div class="bar"></div>
+</div>
+<div class="projects">
+  <div class="project" ng-repeat="project in projects">
+    <a target="_blank" href="{{ project.url }}">
+      <img class="project-img" ng-src="{{ project.img }}" >
+      <div class="details">
+        <div class="project-title"> {{project.title}} </div>
+        <div class="project-type pink"> {{project.type}} </div>
+        <div class="project-description"> {{project.description}} </div>
+      </div> 
+    </a> 
+  </div>  
+</div>

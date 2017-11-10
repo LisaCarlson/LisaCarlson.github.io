@@ -10,8 +10,8 @@ a, li {
   transition: color 0.3s ease-out;
 }
 
-a:hover {
-  color: #cb5a5c;
+.links a:hover {
+  color: #d25999;
 }
 
 ul {
@@ -39,7 +39,6 @@ i {
   width: 60%;
   display: flex;
   flex-flow: column nowrap;
-  // background-image: url('../images/whitebricks.jpg')
 }
 
 .bar {
@@ -118,12 +117,16 @@ i {
 }
 
 .icons a:hover i {
-  color: #cb5a5c;
+  color: #d25999;
   transform: scale(1.2);
 }
 
 .statement {
   font-size: 25px;
+}
+
+.pink {
+  color: #d25999;
 }
 
 .white {
@@ -139,5 +142,26 @@ i {
 }
 
 .details {
-  padding: 20px;
+  padding: 30px;
+}
+
+.project-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.project-type {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  color: #333;
+}
+
+.about-wrapper {
+  width: 70%;
+  align-self: center;
 }

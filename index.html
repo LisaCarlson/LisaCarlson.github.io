@@ -8,24 +8,11 @@
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <link rel='stylesheet', href='stylesheets/style.css'>
+      <base href="/">
     </head>
     <body ng-controller="MainController">
       <div class="content">
-        <div class="left-pane">
-          <div class="title-wrapper">
-            <h2> My Work </h2>
-            <div class="bar"></div>
-          </div>
-          <div class="projects">
-            <div class="project" ng-repeat="project in projects">
-              <a target="_blank" href="{{ project.url }}">
-                <img class="project-img" ng-src="{{ project.img }}" >
-                <div class="details">
-                  <div> {{project.title}} </div>
-                </div> 
-              </a> 
-            </div>  
-          </div>
+        <div class="left-pane" ng-view>
         </div>
         <div class="right-pane">
           <h1 class="white">Lisa Carlson</h1>
