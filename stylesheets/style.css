@@ -1,12 +1,17 @@
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   box-sizing: border-box;
 }
 
 a, li {
   text-decoration: none;
   list-style-type: none;
+  transition: color 0.3s ease-out;
+}
+
+a:hover {
+  color: #cb5a5c;
 }
 
 ul {
@@ -19,6 +24,11 @@ h1 {
 
 h2 {
   margin-bottom: 10px;
+}
+
+i {
+  color: #fff;
+  font-size: 25px;
 }
 
 .content {
@@ -95,8 +105,33 @@ h2 {
   background-position: 50% 50%;
 }
 
+.icons {
+   margin-top: 20px;
+}
+
+.icons a {
+  padding: 10px;
+}
+
+.icons a i {
+  transition: all 0.3s ease-out;
+}
+
+.icons a:hover i {
+  color: #cb5a5c;
+  transform: scale(1.2);
+}
+
+.statement {
+  font-size: 25px;
+}
+
 .white {
   color: #fff;
+}
+
+.yellow {
+  color: #c77f24;
 }
 
 .green {
